@@ -24,3 +24,23 @@ link2.addEventListener('click', () => {
 link3.addEventListener('click', () => {
     scrollToElement('.column');
 });
+
+// janela modal
+function mostrarModal() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'block';
+}
+
+// Função para fechar a janela modal
+function fecharModal() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'none';
+}
+
+// Adiciona evento de clique aos links de navegação
+const links = document.querySelectorAll('.link a');
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        mostrarModal(); // Mostra a janela modal ao clicar em um link
+    });
+});

@@ -388,3 +388,46 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
+
+/* estilos janela modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #27272a; /* Cor de fundo da modal */
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada? testar */
+    max-width: 500px; /* Largura máxima da modal */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content p {
+    color: #fff; /* Cor do texto dentro da modal */
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #1e40af;
+}
