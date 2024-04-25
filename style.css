@@ -447,9 +447,12 @@ footer .column > a:hover{
     padding: 10px 20px;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* transição */
+    transition: opacity 0.3s, transform 0.3s;
     z-index: 1000;
 }
 
 .alert.show {
     display: block;
+    opacity: 1;
 }
