@@ -57,3 +57,5 @@ function mostrarAlertaNoScroll() {
         alerta.classList.remove('show'); // remove a classe 'show' para ocultar o alerta
     }
 }
+
+window.addEventListener('scroll', mostrarAlertaNoScroll);
