@@ -45,3 +45,21 @@ links.forEach(link => {
         mostrarModal();
     });
 });
+
+// modal quando scroll (teste)
+function mostrarModalNoScroll() {
+    var modal = document.getElementById('modal');
+    var scrollPosition = window.scrollY; // posição atual do scroll
+
+    var triggerPosition = 500;
+
+    // ver se a posição do scroll atingiu ou ultrapassou a posição desejada
+    if (scrollPosition >= triggerPosition) {
+        modal.style.display = 'block'; // mostra o modal
+    } else {
+        modal.style.display = 'none'; // tira o modal
+    }
+}
+
+// add evento de scroll ao documento
+window.addEventListener('scroll', mostrarModalNoScroll);
