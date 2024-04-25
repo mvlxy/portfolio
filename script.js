@@ -46,20 +46,14 @@ links.forEach(link => {
     });
 });
 
-// modal quando scroll (teste)
-function mostrarModalNoScroll() {
-    var modal = document.getElementById('modal');
-    var scrollPosition = window.scrollY; // posição atual do scroll
+// mostrar o alerta quando a página for rolada até 500px
+function mostrarAlertaNoScroll() {
+    var alerta = document.getElementById('alerta');
+    var scrollPosition = window.scrollY;
 
-    var triggerPosition = 500;
-
-    // ver se a posição do scroll atingiu ou ultrapassou a posição desejada
-    if (scrollPosition >= triggerPosition) {
-        modal.style.display = 'block'; // mostra o modal
+    if (scrollPosition >= 500) {
+        alerta.classList.add('show'); // exibir o alerta com o 'show'
     } else {
-        modal.style.display = 'none'; // tira o modal
+        alerta.classList.remove('show'); // remove a classe 'show' para ocultar o alerta
     }
 }
-
-// add evento de scroll ao documento
-window.addEventListener('scroll', mostrarModalNoScroll);
