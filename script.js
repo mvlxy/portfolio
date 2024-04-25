@@ -51,7 +51,7 @@ function mostrarAlertaNoScroll() {
     var alerta = document.getElementById('alerta');
     var scrollPosition = window.scrollY;
 
-    if (scrollPosition >= 500) {
+    if (scrollPosition >= 1000) {
         alerta.classList.add('show'); // exibir o alerta com o 'show'
     } else {
         alerta.classList.remove('show'); // remove a classe 'show' para ocultar o alerta
